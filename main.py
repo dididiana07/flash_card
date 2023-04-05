@@ -119,5 +119,5 @@ correct_button = Button(image=correct_img, background=BACKGROUND_COLOR, highligh
                         command=lambda: french_card(1))
 correct_button.place(x=450, y=530)
 
-screen.after(1000, french_card, pressed_button)
+french_card(pressed_button)
 screen.mainloop()
