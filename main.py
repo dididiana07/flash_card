@@ -100,8 +100,8 @@ def restart_automatically(file_path):
 restart_automatically(new_file)
 
 # create widgets
-front_card_image = PhotoImage(file="images/card_front.png")
-back_card_image = PhotoImage(file="images/card_back.png")
+front_card_image = PhotoImage(file="card_front.png")
+back_card_image = PhotoImage(file="card_back.png")
 
 canvas_card = Canvas(width=800, height=526, background=BACKGROUND_COLOR, highlightbackground=BACKGROUND_COLOR)
 card_image_canvas = canvas_card.create_image(400, 263, image=front_card_image)
@@ -109,12 +109,12 @@ canvas_card.grid(row=0, column=1)
 title_text = canvas_card.create_text(400, 150, text="Flash Card", font=("Arial", 40, "italic"))
 word_text = canvas_card.create_text(400, 300, text="Word", font=("Arial", 70, "bold"))
 
-wrong_img = PhotoImage(file="images/wrong.png")
+wrong_img = PhotoImage(file="wrong.png")
 wrong_button = Button(image=wrong_img, background=BACKGROUND_COLOR, highlightbackground=BACKGROUND_COLOR,
                       command=lambda: french_card(2))
 wrong_button.place(x=250, y=530)
 
-correct_img = PhotoImage(file="images/right.png")
+correct_img = PhotoImage(file="right.png")
 correct_button = Button(image=correct_img, background=BACKGROUND_COLOR, highlightbackground=BACKGROUND_COLOR,
                         command=lambda: french_card(1))
 correct_button.place(x=450, y=530)
