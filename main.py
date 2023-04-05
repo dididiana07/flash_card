@@ -7,7 +7,7 @@ import os
 
 BACKGROUND_COLOR = "#B1DDC6"
 FONT = "Arial"
-FILE = "data/french_words.csv"
+FILE = "french_words.csv"
 running = None
 new_file = "learnt_words.csv"
 pressed_button = 0
